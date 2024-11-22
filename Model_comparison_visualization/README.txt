@@ -1,0 +1,8 @@
+---------------------------------------------
+	Model Comparison Visualization
+
+1. This folder contains Images after predicting output3D and visualizing. There is also a code for this process. On the predicting and visualizing process, we use our model, MotionAGFormer-L and MotionAGFormer-B. The code used for the test set of MPI-INF-3DHP dataset, if you want to download weights of MotionAGFormer-L and MotionAGFormer-B for verifying, please access the following link: https://github.com/TaatiTeam/MotionAGFormer.
+
+2. We use again 2 frames index mentioned in our paper: 2053(comparison_3_models_1.png) and 2672(comparison_3_models_14.png) for comparing 3 models. There are also 12 images within the 2 image sequences with specific jumps: 1-501-1001-1501-2001-2501(comparison_3_models_2.png to comparison_3_models_7.png) and 251-751-1251-1751-2251-2751(comparison_3_models_8.png to comparison_3_models_13.png).
+
+3. After visualizing output3D of 3 models on 14 different frames come from both studio with or without green screen, or outdoor scenes, we recognize that our model performs stably and is somewhat better than two versions of MotionAGFormer. The only thing make us confuse is that on the result of 14 frames, MotionAGFormer-B with 16 layers somehow performs better than MotionAGFormer-L with 26 layers (Which is state-of-the-art model with highest result(MPJPE) on MPI-INF-3DHP), you can check again by loading their weights and using our code to predict and visualize their outputs.
